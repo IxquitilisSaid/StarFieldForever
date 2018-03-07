@@ -1,0 +1,36 @@
+1- dividir em 2 arquivos (execucao e classe)
+
+2- classe estrela que leve 3 dados (x, y, z)
+
+3- uma funçao para criar a estrela, chamada de estrela 
+3.2- cada dado vai receber os parametros de criação
+3.2.1- x com valor aleatorio entre menos largura e largura
+       y com valor aleatorio entre menos altura e altura
+       z com valor aleatorio largura
+
+4- criar uma array para a quantidade de estrelas (Estrela[] estrela = nova Estrela[800]
+   em que 800 é a quantidade de estrelas
+
+5- criar uma função de setup
+5.2- definir o tamanho da janela (800 por 800)
+     criar um loop em que estrelas[i] = nova Estrela()
+5.2.2- o i deve ser menor que o comprimento de estrelas 
+
+6- criar uma função desenho
+6.2- espaço é negro, logo o fundo deve ser preto(0)
+6.2.2- transladar a posição inicial para largura / 2 e comprimento / 2 para que centre a imagem
+6.3- definir um loop em que estrelas atualizem e mostrem 
+
+7- criar uma funçao atualizar 
+7.2- definir a velocidade (z = z - velo)
+7.3- criar um condicional em que z é largura, x é aleatorio entre menos largura e largura, y aleatorio entre -altura e altura para evitar que divide por 0
+
+8- criar uma funcao mostrar
+8.1- que preencha com branco (255), sem stroke
+8.2- definir novas variaveis como controle (sx, sy), mapeada em que seja entre 0/1 e 0/(largura ou altura)
+8.3- definir uma variavel r mapeada com valor z entre 0 e largura em que tamanho em 0 seja ex:16 e na largura seja nao visivel (0)
+8.4- desenhar uma elipse com paramentro sx, sy, r, r
+
+9- criar uma variavel globar para controlar a velocidade com o mouse
+9.2- velo = mapear posição do mouseX, que é entre 0 e a largura em que 0 sera 0 e na largura sera algo como 40px
+    
